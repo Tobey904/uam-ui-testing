@@ -18,6 +18,7 @@ public class Steps {
         public void openPage(String page) {
             Configuration.baseUrl = "https://" + page;
             Configuration.headless = true;
+            clearBrowserCookies();
         }
 
         @When("We search for {string} word")
